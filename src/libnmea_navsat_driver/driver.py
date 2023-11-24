@@ -270,6 +270,7 @@ class Ros2NMEADriver(Node):
                 current_heading.quaternion.w = q[3]
                 self.heading_pub.publish(current_heading)
         else:
+            self.get_logger().debug("No matching If-condition for NMEA sentence: %s" % nmea_string)
             return False
         return True
 
