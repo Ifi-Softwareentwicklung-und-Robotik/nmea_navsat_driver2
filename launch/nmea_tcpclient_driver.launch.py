@@ -19,7 +19,7 @@ import sys
 
 from ament_index_python.packages import get_package_share_directory
 from launch.substitutions import LaunchConfiguration
-from launch.acions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument
 from launch import LaunchDescription, LaunchIntrospector, LaunchService
 from launch_ros import actions
 
